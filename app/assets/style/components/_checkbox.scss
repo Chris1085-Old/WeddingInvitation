@@ -1,0 +1,36 @@
+.terms-check {
+  border: 1px solid black;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  margin: 0;
+
+  &[type='checkbox'] {
+    -webkit-appearance: none;
+    border-radius: 0px;
+    position: relative;
+    &:checked {
+      background-color: $secondary-color;
+      &::after {
+        content: '\2714';
+        position: absolute;
+        top: 0;
+        left: 3px;
+        font-size: 12px;
+        color: white;
+      }
+    }
+    &:focus {
+      border-color: $text-gray-color;
+    }
+    &:hover {
+      border-color: $text-gray-color;
+    }
+
+    ~ label {
+      display: inline-block;
+      font-weight: normal;
+      margin-left: 4px;
+    }
+  }
+}

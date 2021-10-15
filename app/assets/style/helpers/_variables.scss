@@ -1,0 +1,59 @@
+$primary-color: #650300;
+$secondary-color: #aa0601;
+$text-gray-color: #707070;
+$light-pink: #fbf2f2;
+$placeholder-color: rgba(0, 0, 0, 0.2);
+$white: white;
+$dark: black;
+$dbrown: #5f3e2d;
+$brown: #b75929;
+
+$themes: (
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+  'dgray': $text-gray-color,
+  'gray': $placeholder-color,
+  'dark': $dark,
+  'white': $white,
+  'lpink': $light-pink,
+  'dbrown': $dbrown,
+  'brown': $brown
+);
+
+@each $key, $value in $themes {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+}
+@each $key, $value in $themes {
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+$sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+);
+
+@each $prop, $abbrev in (width: w, height: h) {
+  @each $num, $val in $sizes {
+    .#{$abbrev}-#{$num} {
+      #{$prop}: $val;
+    }
+  }
+}
+
+@each $key in 3, 4, 5, 7, 9 {
+  .fw-#{$key} {
+    font-weight: $key * 100;
+  }
+}
+.fw-0 {
+  font-weight: normal;
+}
+.fw-b {
+  font-weight: bolder;
+}

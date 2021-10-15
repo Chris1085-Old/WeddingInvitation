@@ -1,0 +1,13 @@
+.list-item-link {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: rgb(190, 190, 190);
+  }
+}
+
+.list-img {
+  object-fit: cover;
+  cursor: pointer;
+}

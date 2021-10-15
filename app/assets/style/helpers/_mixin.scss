@@ -1,0 +1,56 @@
+$pc-media: 992px;
+$pcs-media: 991px;
+$pad-media: 768px;
+$pads-media: 767px;
+
+//電腦
+@mixin pc() {
+  @media all and (min-width: $pc-media) {
+    @content;
+  }
+}
+//平板
+@mixin pad() {
+  @media all and (min-width: $pad-media) and (max-width: $pcs-media) {
+    @content;
+  }
+}
+//手機
+@mixin mobile() {
+  @media all and (max-width: $pads-media) {
+    @content;
+  }
+}
+
+%card-boxshadow {
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  // box-shadow: 3px 0 13px 0 rgba(100, 112, 134, 0.1);
+}
+
+%list-card-flex-gap {
+  gap: 30px;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+%noraml-font-setting {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+  @include pad {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

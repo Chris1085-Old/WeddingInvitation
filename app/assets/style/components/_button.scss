@@ -1,0 +1,93 @@
+%reset-Button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+.btn {
+  @extend %reset-Button;
+  width: 350px;
+  height: 54px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  line-height: 22px;
+  cursor: pointer;
+
+  @include pad {
+    width: 210px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  @include mobile {
+    width: 165px;
+    height: 36px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+
+.btn-primary {
+  color: white;
+  background-color: $secondary-color;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.btn-dark {
+  outline: black solid 1px;
+  width: 100%;
+  color: white;
+  background-color: $dark;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 67px;
+  font-size: 19px;
+  line-height: 27px;
+  text-align: center;
+
+  @include pad {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 52px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include mobile {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 52px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: rgba($color: #000000, $alpha: 0.85);
+  }
+}

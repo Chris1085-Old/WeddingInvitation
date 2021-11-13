@@ -7,6 +7,8 @@ $white: white;
 $dark: black;
 $dbrown: #5f3e2d;
 $brown: #b75929;
+$pink: #fd5c92;
+$light-pink: #ff82ac;
 
 $themes: (
   'primary': $primary-color,
@@ -17,7 +19,8 @@ $themes: (
   'white': $white,
   'lpink': $light-pink,
   'dbrown': $dbrown,
-  'brown': $brown
+  'brown': $brown,
+  'pink': $pink
 );
 
 @each $key, $value in $themes {

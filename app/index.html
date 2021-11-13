@@ -1,5 +1,5 @@
 ---
-title: 權芳&品慈婚宴邀請函
+title: C&P Wedding
 layout: ./app/layout.ejs
 engine: ejs
 current: index
@@ -10,9 +10,53 @@ current: index
     <source src="./assets/audio/EverythingINeed.mp3" type="audio/mpeg" />
   </audio>
 
-  <div class="container-fluid py-3 invitation-container">
-    <div class="container py-3 content-container">
-      <h1>Wedding Day</h1>
+  <section class="main container-fluid">
+    <div class="main-content container content-container d-flex flex-column justify-content-center align-items-end">
+      <div class="content-text text-white text-center">
+        <span class="invited-text animate__animated animate__heartBeat animate__slow">You're Invited</span>
+        <h1 class="married-text mt-5 animate__animated animate__fadeInUp font-marker">WE ARE<br />GETTING MARRIED</h1>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section class="wedding-info text-center" id="wedding-info">
+    <h2 class="title font-marker">Wedding Info</h2>
+    <div class="container d-flex flex-wrap">
+      <div class="info-content col-12 col-md-6 d-flex flex-column justify-content-between">
+        <ul class="info-list font-marker text-start">
+          <li class="list-item">
+            <h4 class="subtitle w-100"><i class="far fa-calendar-alt pr-2 icons"></i>日期＆時間｜Date＆Time</h4>
+            <div class="date-container d-flex justify-content-center py-2">
+              <div class="wedding-date-container d-flex flex-column col-6 text-pink">
+                <span class="wedding-info-text">2021.12.31 FRIDAY</span>
+                <span class="wedding-info-text">11:00 莊園雞尾酒會</span>
+                <span class="wedding-info-text">12:00 午宴準時開席</span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <h4 class="subtitle w-100"><i class="fas fa-map-marker-alt pr-2 icons"></i>場地｜Location</h4>
+            <span class="wedding-info-text py-2 text-pink">孫立人將軍官邸 玻璃花房</span>
+          </li>
+          <li class="list-item">
+            <h4 class="subtitle w-100"><i class="fas fa-phone pr-2 icons"></i>地址＆電話｜Address＆Tel</h4>
+            <span class="wedding-info-text py-2 text-pink">台北市中正區南昌路一段136號 (02)2321-6910</span>
+          </li>
+        </ul>
+        <div class="btn-container">
+          <button type="button" name="" id="" class="btn btn-primary btn-lg btn-block font-marker">SAVE DATE</button>
+        </div>
+      </div>
+      <div class="map-info col-12 col-md-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.147202787192!2d121.51618125099363!3d25.029078044563352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a999a1db5793%3A0xb8becd29f9f4c6fe!2z5a2r56uL5Lq65bCH6LuN5a6Y6YK477yI6Zm46LuN6IGv6Kq85buz77yJ!5e0!3m2!1szh-TW!2stw!4v1636787425187!5m2!1szh-TW!2stw"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
 </main>

@@ -1,8 +1,150 @@
-.invitation-container {
-  background-color: rgb(255, 237, 240);
-}
-
 .content-container {
   height: 100%;
-  background-color: white;
+}
+
+.main {
+  background-image: url('../images/main.jpg');
+  background-repeat: no-repeat;
+  background-position: left top, right bottom, center center;
+  background-size: cover;
+}
+
+.main-content {
+  .content-text {
+    position: relative;
+  }
+
+  @include pad {
+    align-items: center !important;
+  }
+
+  @include mobile {
+    align-items: center !important;
+  }
+}
+
+.invited-text {
+  display: block;
+  font-family: 'Pacifico', cursive;
+  font-size: 80px;
+  line-height: 80px;
+
+  @include pad {
+    font-size: 60px;
+  }
+
+  @include mobile {
+    font-size: 40px;
+  }
+}
+
+.married-text {
+  font-size: 60px;
+
+  @include pad {
+    font-size: 40px;
+  }
+
+  @include mobile {
+    font-size: 30px;
+    margin-top: 1rem !important;
+  }
+}
+
+.content-text::before,
+.content-text::after {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  bottom: -1.5rem;
+  left: -1.5rem;
+  right: -1.5rem;
+  transition: transform 0.4s ease-out;
+}
+
+.content-text::before {
+  border-top: 10px double white;
+  border-bottom: 10px double white;
+  animation-name: fadeInX;
+  animation-duration: 1s;
+  transform: scale(1.05, 1);
+}
+.content-text::after {
+  border-left: 10px double white;
+  border-right: 10px double white;
+  animation-name: fadeInY;
+  animation-duration: 1s;
+  transform: scale(1, 1.05);
+}
+
+@keyframes fadeInX {
+  from {
+    transform: scale(0, 1);
+  }
+  to {
+    transform: scale(1.05, 1);
+  }
+}
+@keyframes fadeInY {
+  from {
+    transform: scale(1, 0);
+  }
+  to {
+    transform: scale(1, 1.05);
+  }
+}
+
+.wedding-info {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include mobile {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .title {
+    margin-bottom: 28px;
+
+    @include mobile {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .subtitle {
+    @include mobile {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
+.wedding-info-text {
+  display: block;
+  font-size: 28px;
+  line-height: 32px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.map-info {
+  position: relative;
+  padding-bottom: 40%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  @include mobile {
+    padding-bottom: 60%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

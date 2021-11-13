@@ -52,10 +52,14 @@
 
 .btn-primary {
   color: white;
-  background-color: $secondary-color;
+  background-color: $pink;
+  border-radius: 0%;
+  font-family: 'Permanent Marker', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 30px;
 
   &:hover {
-    background-color: $primary-color;
+    background-color: $light-pink;
   }
 }
 

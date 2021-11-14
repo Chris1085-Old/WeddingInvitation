@@ -189,65 +189,71 @@
 
   .date-text-container {
     .wedding-info-text {
-      font-size: 52px;
+      font-size: 72px;
 
       @include pad {
-        font-size: 32px;
+        font-size: 60px;
       }
 
       @include mobile {
-        font-size: 24px;
+        font-size: 44px;
       }
 
       @media (max-width: 429px) {
-        line-height: 30px;
+        font-size: 44px;
+        line-height: 44px;
       }
     }
   }
 
   .time-text-container {
-    border-left: 2px solid $pink;
+    // border-left: 2px solid $pink;
 
     .wedding-info-text {
-      font-size: 44px;
+      font-size: 64px;
       margin-top: 20px;
       margin-bottom: 20px;
 
       span {
+        font-size: 44px;
         letter-spacing: 6px;
       }
 
       @include pad {
-        font-size: 28px;
+        font-size: 48px;
         margin-top: 10px;
         margin-bottom: 10px;
         letter-spacing: 4px;
 
         span {
+          font-size: 28px;
           letter-spacing: 4px;
         }
       }
 
       @include mobile {
-        font-size: 16px;
+        font-size: 28px;
         // margin-top: 2px;
         // margin-bottom: 2px;
         line-height: 32px;
         // letter-spacing: 4px;
 
         span {
+          font-size: 16px;
           letter-spacing: 4px;
         }
       }
 
       @media (max-width: 429px) {
-        font-size: 15px;
+        font-size: 28px;
         margin-top: 2px;
         margin-bottom: 2px;
         line-height: 32px;
         // letter-spacing: 2px;
 
         span {
+          font-size: 15px;
+
           letter-spacing: 2px;
         }
       }

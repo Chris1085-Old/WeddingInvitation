@@ -1,3 +1,11 @@
 .heart {
-  font-size: 50px;
+  font-size: 48px;
+
+  @include pad {
+    font-size: 32px;
+  }
+
+  @include mobile {
+    font-size: 24px;
+  }
 }

@@ -82,6 +82,7 @@
     border-bottom: 10px double white;
     animation-name: fadeInX;
     animation-duration: 1s;
+    animation-delay: 1s;
     transform: scale(1.05, 1);
   }
   .content-text::after {
@@ -89,6 +90,7 @@
     border-right: 10px double white;
     animation-name: fadeInY;
     animation-duration: 1s;
+    animation-delay: 1s;
     transform: scale(1, 1.05);
   }
 }

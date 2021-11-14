@@ -10,53 +10,175 @@ current: index
     <source src="./assets/audio/EverythingINeed.mp3" type="audio/mpeg" />
   </audio>
 
-  <section class="main container-fluid">
+  <section class="main container-fluid" id="main">
+    <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
     <div class="main-content container content-container d-flex flex-column justify-content-center align-items-end">
       <div class="content-text text-white text-center">
-        <span class="invited-text animate__animated animate__heartBeat animate__slow">You're Invited</span>
-        <h1 class="married-text mt-5 animate__animated animate__fadeInUp font-marker">WE ARE<br />GETTING MARRIED</h1>
+        <div class="background-area"></div>
+        <span class="invited-text animate__animated animate__heartBeat animate__slow font-marker">You're Invited!</span>
+        <h1 class="married-text mt-3 animate__animated animate__fadeInUp font-pacifico">
+          We Are<br />Getting Married.<br />
+          2021.12.31 <i class="far fa-heart heart"></i>
+        </h1>
+      </div>
+    </div>
+
+    <a class="mouse-container" href="#wedding-info">
+      <div id="mouse-scroll">
+        <div class="mouse">
+          <div class="mouse-in"></div>
+        </div>
+        <div>
+          <span class="down-arrow-1"></span>
+          <span class="down-arrow-2"></span>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <section class="wedding-info text-center" id="wedding-info">
+    <h2 class="title font-marker text-white">Wedding Info</h2>
+    <h2 class="title font-marker text-white"><i class="far fa-calendar-alt pr-2 icons"></i><br />DATE and TIME</h2>
+
+    <div class="container d-flex flex-wrap">
+      <div class="date-container d-flex w-100">
+        <div class="date-text-container col-6 d-flex justify-content-center align-items-center">
+          <span class="wedding-info-text text-pink d-block">2021.12.31 FRIDAY</span>
+        </div>
+        <div class="time-text-container col-6 d-flex justify-content-center align-items-center">
+          <ul class="date-list ">
+            <li class="wedding-info-text text-pink list-item">11:00 莊園雞尾酒會</li>
+            <li class="wedding-info-text text-pink list-item">12:00 午宴準時開席</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="btn-container col-12">
+        <button type="button" name="" id="" class="btn btn-primary btn-lg btn-block font-marker">SAVE THE DATE</button>
+      </div>
+
+      <div id="restaurantCarouselIndicator" class="carousel slide mb-5 w-100" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#restaurantCarouselIndicator"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="restaurant_01"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#restaurantCarouselIndicator"
+            data-bs-slide-to="1"
+            aria-label="restaurant_02"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#restaurantCarouselIndicator"
+            data-bs-slide-to="2"
+            aria-label="restaurant_03"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/restaurant_01.jpg" class="d-block w-100" alt="restaurant_01" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/restaurant_02.jpg" class="d-block w-100" alt="restaurant_02" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/restaurant_03.png" class="d-block w-100" alt="restaurant_03" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#restaurantCarouselIndicator"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#restaurantCarouselIndicator"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <a class="mouse-container" href="#location">
+      <div id="mouse-scroll">
+        <div class="mouse">
+          <div class="mouse-in"></div>
+        </div>
+        <div>
+          <span class="down-arrow-1"></span>
+          <span class="down-arrow-2"></span>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <section class="location-container text-center" id="location">
+    <h2 class="title font-marker text-white"><i class="fas fa-map-marker-alt pr-2 icons"></i><br />Location</h2>
+
+    <div class="container map-info-container ">
+      <span class="wedding-info-text text-pink subtitle fw-bold">孫立人將軍官邸</span>
+      <span class="wedding-info-text text-pink subtitle fw-bold">玻璃花房</span>
+
+      <div class="d-flex flex-wrap">
+        <ul class="map-info-text-container col-12 col-md-6 text-left d-flex flex-column justify-content-center">
+          <li class="wedding-info-text text-pink">
+            <i class="fas fa-map-marker-alt pr-2 icons"></i>台北市中正區南昌路一段136號
+          </li>
+          <li class="wedding-info-text text-pink"><i class="fas fa-phone pr-2 icons"></i>(02)2321-6910</li>
+          <li class="wedding-info-text text-pink"><i class="fas fa-subway pr-2 icons"></i>中正紀念堂站2號出口</li>
+          <li class="wedding-info-text text-pink">古亭站7號出口</li>
+          <li class="wedding-info-text text-pink">
+            <i class="fas fa-bus pr-2 icons"></i>1、208、235、241、243、252、660、706
+          </li>
+          <li class="wedding-info-text text-pink"><i class="fas fa-parking pr-2 icons"></i>園區免費停車</li>
+        </ul>
+
+        <div class="map-info col-12 col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.147202787192!2d121.51618125099363!3d25.029078044563352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a999a1db5793%3A0xb8becd29f9f4c6fe!2z5a2r56uL5Lq65bCH6LuN5a6Y6YK477yI6Zm46LuN6IGv6Kq85buz77yJ!5e0!3m2!1szh-TW!2stw!4v1636787425187!5m2!1szh-TW!2stw"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="wedding-info text-center" id="wedding-info">
-    <h2 class="title font-marker">Wedding Info</h2>
-    <div class="container d-flex flex-wrap">
-      <div class="info-content col-12 col-md-6 d-flex flex-column justify-content-between">
-        <ul class="info-list font-marker text-start">
-          <li class="list-item">
-            <h4 class="subtitle w-100"><i class="far fa-calendar-alt pr-2 icons"></i>日期＆時間｜Date＆Time</h4>
-            <div class="date-container d-flex justify-content-center py-2">
-              <div class="wedding-date-container d-flex flex-column col-6 text-pink">
-                <span class="wedding-info-text">2021.12.31 FRIDAY</span>
-                <span class="wedding-info-text">11:00 莊園雞尾酒會</span>
-                <span class="wedding-info-text">12:00 午宴準時開席</span>
-              </div>
-            </div>
-          </li>
-          <li class="list-item">
-            <h4 class="subtitle w-100"><i class="fas fa-map-marker-alt pr-2 icons"></i>場地｜Location</h4>
-            <span class="wedding-info-text py-2 text-pink">孫立人將軍官邸 玻璃花房</span>
-          </li>
-          <li class="list-item">
-            <h4 class="subtitle w-100"><i class="fas fa-phone pr-2 icons"></i>地址＆電話｜Address＆Tel</h4>
-            <span class="wedding-info-text py-2 text-pink">台北市中正區南昌路一段136號 (02)2321-6910</span>
-          </li>
-        </ul>
-        <div class="btn-container">
-          <button type="button" name="" id="" class="btn btn-primary btn-lg btn-block font-marker">SAVE DATE</button>
-        </div>
-      </div>
-      <div class="map-info col-12 col-md-6">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.147202787192!2d121.51618125099363!3d25.029078044563352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a999a1db5793%3A0xb8becd29f9f4c6fe!2z5a2r56uL5Lq65bCH6LuN5a6Y6YK477yI6Zm46LuN6IGv6Kq85buz77yJ!5e0!3m2!1szh-TW!2stw!4v1636787425187!5m2!1szh-TW!2stw"
-          width="400"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
-    </div>
-  </section>
+  <div class="text-center" id="fixTop"><a href="#main" class="font-marker">TOP</a></div>
 </main>

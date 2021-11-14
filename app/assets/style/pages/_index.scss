@@ -189,18 +189,18 @@
 
   .date-text-container {
     .wedding-info-text {
-      font-size: 72px;
+      font-size: 64px;
 
       @include pad {
-        font-size: 60px;
+        font-size: 48px;
       }
 
       @include mobile {
-        font-size: 44px;
+        font-size: 36px;
       }
 
       @media (max-width: 429px) {
-        font-size: 44px;
+        font-size: 28px;
         line-height: 44px;
       }
     }
@@ -210,23 +210,23 @@
     // border-left: 2px solid $pink;
 
     .wedding-info-text {
-      font-size: 64px;
+      font-size: 56px;
       margin-top: 20px;
       margin-bottom: 20px;
 
       span {
-        font-size: 44px;
+        font-size: 40px;
         letter-spacing: 6px;
       }
 
       @include pad {
-        font-size: 48px;
+        font-size: 40px;
         margin-top: 10px;
         margin-bottom: 10px;
         letter-spacing: 4px;
 
         span {
-          font-size: 28px;
+          font-size: 32px;
           letter-spacing: 4px;
         }
       }
@@ -239,13 +239,13 @@
         // letter-spacing: 4px;
 
         span {
-          font-size: 16px;
+          font-size: 20px;
           letter-spacing: 4px;
         }
       }
 
       @media (max-width: 429px) {
-        font-size: 28px;
+        font-size: 20px;
         margin-top: 2px;
         margin-bottom: 2px;
         line-height: 32px;
@@ -384,7 +384,8 @@
       margin-bottom: 40px;
     }
 
-    .wedding-info-text {
+    .wedding-info-text,
+    .wedding-info-text span {
       @include pad {
         font-size: 20px;
         margin-top: 0px;
@@ -400,11 +401,44 @@
       }
     }
 
+    .wedding-info-text span {
+      @include pc {
+        display: block;
+        font-size: 28px;
+        text-decoration: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 48px;
+      }
+
+      @include pad {
+        font-size: 20px;
+        margin-top: 6px;
+        margin-bottom: 0px;
+        margin-left: 8px;
+        line-height: 36px;
+      }
+
+      @include mobile {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 4px;
+        line-height: 28px;
+      }
+    }
+
     .wedding-info-text:nth-child(4) {
       margin-left: 48px;
 
       @include mobile {
         margin-left: 32px;
+      }
+    }
+
+    .wedding-info-text:nth-child(5) .icons {
+      @include mobile {
+        display: block;
+        margin-top: 4px;
       }
     }
 

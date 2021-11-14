@@ -18,6 +18,6 @@ git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.Github.io/<REPO>
 # git push -f https://github.com/<USERNAME>/<REPO>.git master:gh-pages
-git push -f https://github.com/chris1085/2021_liveCourseLayoutW4.git master:gh-pages
+git push -f https://github.com/chris1085/WeddingInvitation.git master:gh-pages
 
 cd -

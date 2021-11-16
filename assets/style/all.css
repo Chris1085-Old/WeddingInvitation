@@ -986,14 +986,25 @@ textarea {
       line-height: 20px;
       font-size: 14px; } }
 
-.btn-primary {
+.btn-pink {
   color: white;
   background-color: #fac6b9;
   border-radius: 0%;
   font-family: 'Permanent Marker', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 30px; }
-  .btn-primary:hover {
-    background-color: #f7dcd5; }
+  .btn-pink:hover {
+    background-color: #f7dcd5;
+    color: white; }
+  .btn-pink:focus {
+    outline: 0 !important;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.btn:focus,
+.btn-lg:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .btn-dark {
   outline: black solid 1px;
@@ -1266,6 +1277,11 @@ textarea {
 .carousel {
   background: #7c2b2b; }
 
+.flickity-button {
+  background: transparent; }
+  .flickity-button:hover {
+    background: rgba(255, 255, 255, 0.2); }
+
 /* position dots up a bit */
 .flickity-page-dots {
   bottom: 0px;
@@ -1523,12 +1539,12 @@ textarea {
   @media all and (min-width: 768px) and (max-width: 991px) {
     .btn-container {
       margin-bottom: 12px; }
-      .btn-container .btn-primary {
+      .btn-container .btn-pink {
         font-size: 24px; } }
   @media all and (max-width: 767px) {
     .btn-container {
       margin-bottom: 8px; }
-      .btn-container .btn-primary {
+      .btn-container .btn-pink {
         font-size: 20px; } }
 
 .mouse-container {

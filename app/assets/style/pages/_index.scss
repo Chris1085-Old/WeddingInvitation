@@ -81,7 +81,7 @@
     border-top: 10px double white;
     border-bottom: 10px double white;
     animation-name: fadeInX;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-delay: 0.5s;
     transform: scale(1.05, 1);
   }
@@ -89,7 +89,7 @@
     border-left: 10px double white;
     border-right: 10px double white;
     animation-name: fadeInY;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-delay: 0.5s;
     transform: scale(1, 1.05);
   }
@@ -176,43 +176,21 @@
   }
 
   .date-container {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 
     @include pad {
-      margin-bottom: 80px;
+      margin-bottom: 40px;
     }
 
     @include mobile {
-      margin-bottom: 40px;
+      margin-bottom: 32px;
     }
   }
 
   .date-text-container {
     .wedding-info-text {
       font-size: 64px;
-
-      @include pad {
-        font-size: 48px;
-      }
-
-      @include mobile {
-        font-size: 36px;
-      }
-
-      @media (max-width: 429px) {
-        font-size: 28px;
-        line-height: 44px;
-      }
-    }
-  }
-
-  .time-text-container {
-    // border-left: 2px solid $pink;
-
-    .wedding-info-text {
-      font-size: 56px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      line-height: 80px;
 
       span {
         font-size: 40px;
@@ -220,10 +198,8 @@
       }
 
       @include pad {
-        font-size: 40px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        letter-spacing: 4px;
+        font-size: 56px;
+        line-height: 60px;
 
         span {
           font-size: 32px;
@@ -232,11 +208,8 @@
       }
 
       @include mobile {
-        font-size: 28px;
-        // margin-top: 2px;
-        // margin-bottom: 2px;
         line-height: 32px;
-        // letter-spacing: 4px;
+        font-size: 36px;
 
         span {
           font-size: 20px;
@@ -245,21 +218,71 @@
       }
 
       @media (max-width: 429px) {
-        font-size: 20px;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        line-height: 32px;
-        // letter-spacing: 2px;
-
+        font-size: 36px;
+        line-height: 44px;
         span {
-          font-size: 15px;
-
-          letter-spacing: 2px;
+          font-size: 20px;
+          letter-spacing: 4px;
         }
       }
     }
   }
 }
+
+//   .time-text-container {
+//     // border-left: 2px solid $pink;
+
+//     .wedding-info-text {
+//       font-size: 56px;
+//       margin-top: 20px;
+//       margin-bottom: 20px;
+
+//       span {
+//         font-size: 40px;
+//         letter-spacing: 6px;
+//       }
+
+//       @include pad {
+//         font-size: 40px;
+//         margin-top: 10px;
+//         margin-bottom: 10px;
+//         letter-spacing: 4px;
+
+//         span {
+//           font-size: 32px;
+//           letter-spacing: 4px;
+//         }
+//       }
+
+//       @include mobile {
+//         font-size: 28px;
+//         // margin-top: 2px;
+//         // margin-bottom: 2px;
+//         line-height: 32px;
+//         // letter-spacing: 4px;
+
+//         span {
+//           font-size: 20px;
+//           letter-spacing: 4px;
+//         }
+//       }
+
+//       @media (max-width: 429px) {
+//         font-size: 20px;
+//         margin-top: 2px;
+//         margin-bottom: 2px;
+//         line-height: 32px;
+//         // letter-spacing: 2px;
+
+//         span {
+//           font-size: 15px;
+
+//           letter-spacing: 2px;
+//         }
+//       }
+//     }
+//   }
+// }
 
 .btn-container {
   margin-bottom: 56px;
@@ -273,7 +296,7 @@
   }
 
   @include mobile {
-    margin-bottom: 24px;
+    margin-bottom: 4px;
 
     .btn-primary {
       font-size: 20px;

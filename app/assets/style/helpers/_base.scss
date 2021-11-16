@@ -52,7 +52,7 @@ h4 {
 
 h6 {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 24px;
 }
 
 p {
@@ -80,14 +80,11 @@ header {
 }
 
 footer {
-  padding-top: 32px;
-  padding-bottom: 40px;
-
-  @include pad {
-    padding-bottom: 32px;
-  }
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @include mobile {
+    padding-top: 16px;
     padding-bottom: 16px;
   }
 }

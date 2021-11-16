@@ -200,6 +200,7 @@
 }
 
 .fixTop {
+  visibility: visible;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -224,6 +225,11 @@
   &:hover {
     background-color: $light-pink;
   }
+}
+
+.fixTop-hidden {
+  visibility: hidden;
+  position: absolute;
 }
 
 @keyframes fadeInOpacity {

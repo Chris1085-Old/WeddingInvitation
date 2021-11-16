@@ -50,7 +50,7 @@
   }
 }
 
-.btn-primary {
+.btn-pink {
   color: white;
   background-color: $pink;
   border-radius: 0%;
@@ -60,7 +60,19 @@
 
   &:hover {
     background-color: $light-pink;
+    color: white;
   }
+
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none;
+  }
+}
+
+.btn:focus,
+.btn-lg:focus {
+  outline: 0 !important;
+  box-shadow: none;
 }
 
 .btn-dark {

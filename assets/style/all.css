@@ -902,17 +902,6 @@ textarea {
 .container-fluid {
   height: 100vh; }
 
-.icons {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center; }
-  @media all and (max-width: 767px) {
-    .icons {
-      width: 20px;
-      height: 20px;
-      line-height: 20px; } }
-
 .bg-secondary {
   background-color: #7c2b2b !important; }
 
@@ -1127,6 +1116,7 @@ textarea {
     opacity: 1; } }
 
 .fixTop {
+  visibility: visible;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -1151,6 +1141,10 @@ textarea {
     color: white; }
   .fixTop:hover {
     background-color: #f7dcd5; }
+
+.fixTop-hidden {
+  visibility: hidden;
+  position: absolute; }
 
 @-webkit-keyframes fadeInOpacity {
   0% {
@@ -1243,6 +1237,17 @@ textarea {
       pointer-events: none;
       cursor: default; }
 
+.icons {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center; }
+  @media all and (max-width: 767px) {
+    .icons {
+      width: 20px;
+      height: 20px;
+      line-height: 20px; } }
+
 .heart {
   font-size: 48px; }
   @media all and (min-width: 768px) and (max-width: 991px) {
@@ -1257,6 +1262,29 @@ textarea {
 
 .animate__fadeInUp {
   --animate-duration: 2000ms; }
+
+.carousel {
+  background: #7c2b2b; }
+
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: 0px;
+  padding-bottom: 10px; }
+
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0; }
+
+.carousel img {
+  display: block;
+  height: 200px; }
+
+@media screen and (min-width: 768px) {
+  .carousel img {
+    height: 400px; } }
 
 .content-container {
   height: 100%; }
@@ -1449,14 +1477,14 @@ textarea {
       .wedding-info .date-container {
         margin-bottom: 32px; } }
   .wedding-info .date-text-container .wedding-info-text {
-    font-size: 64px;
+    font-size: 40px;
     line-height: 80px; }
     .wedding-info .date-text-container .wedding-info-text span {
       font-size: 40px;
       letter-spacing: 6px; }
     @media all and (min-width: 768px) and (max-width: 991px) {
       .wedding-info .date-text-container .wedding-info-text {
-        font-size: 56px;
+        font-size: 32px;
         line-height: 60px; }
         .wedding-info .date-text-container .wedding-info-text span {
           font-size: 32px;
@@ -1464,17 +1492,31 @@ textarea {
     @media all and (max-width: 767px) {
       .wedding-info .date-text-container .wedding-info-text {
         line-height: 32px;
-        font-size: 36px; }
+        font-size: 20px; }
         .wedding-info .date-text-container .wedding-info-text span {
           font-size: 20px;
           letter-spacing: 4px; } }
     @media (max-width: 429px) {
       .wedding-info .date-text-container .wedding-info-text {
-        font-size: 36px;
+        font-size: 20px;
         line-height: 44px; }
         .wedding-info .date-text-container .wedding-info-text span {
           font-size: 20px;
           letter-spacing: 4px; } }
+    .wedding-info .date-text-container .wedding-info-text:first-child {
+      font-size: 72px;
+      margin-bottom: 24px; }
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        .wedding-info .date-text-container .wedding-info-text:first-child {
+          font-size: 64px;
+          margin-bottom: 24px; } }
+      @media all and (max-width: 767px) {
+        .wedding-info .date-text-container .wedding-info-text:first-child {
+          font-size: 40px;
+          margin-bottom: 24px; } }
+      @media (max-width: 429px) {
+        .wedding-info .date-text-container .wedding-info-text:first-child {
+          font-size: 44px; } }
 
 .btn-container {
   margin-bottom: 56px; }
@@ -1485,7 +1527,7 @@ textarea {
         font-size: 24px; } }
   @media all and (max-width: 767px) {
     .btn-container {
-      margin-bottom: 4px; }
+      margin-bottom: 8px; }
       .btn-container .btn-primary {
         font-size: 20px; } }
 

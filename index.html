@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -35,7 +36,7 @@
     <div class="main-content container content-container d-flex flex-column justify-content-center align-items-end">
       <div class="content-text text-white text-center">
         <div class="background-area"></div>
-        <span class="invited-text animate__animated animate__heartBeat animate__slow font-marker">You're Invited!</span>
+        <p class="invited-text animate__animated animate__heartBeat animate__slow font-marker">You're Invited!</p>
         <h1 class="married-text mt-3 animate__animated animate__fadeInUp font-pacifico">
           We Are<br />Getting Married.<br />
           2021.12.31 <i class="far fa-heart heart"></i>
@@ -56,9 +57,24 @@
     </a>
   </section>
 
+  <section class="carousel-container">
+    <div
+      class="carousel"
+      data-flickity='{ "imagesLoaded": true, "percentPosition": false,"autoPlay": true, "wrapAround": true }'
+    >
+      <img src="./assets/images/02.jpg" alt="02" />
+      <img src="./assets/images/03.jpg" alt="03" />
+      <img src="./assets/images/04.jpg" alt="04" />
+      <img src="./assets/images/05.jpg" alt="05" />
+      <img src="./assets/images/06.jpg" alt="06" />
+      <img src="./assets/images/07.jpg" alt="07" />
+      <img src="./assets/images/08.jpg" alt="08" />
+      <img src="./assets/images/01.jpg" alt="01" />
+    </div>
+  </section>
+
   <section class="wedding-info text-center" id="wedding-info">
     <div data-aos="fade-up" data-aos-duration="2000">
-      <!-- <h2 class="title font-marker text-white">Wedding Info</h2> -->
       <h2 class="title font-marker text-white"><i class="far fa-calendar-alt pr-2 icons"></i><br />DATE and TIME</h2>
     </div>
 
@@ -66,26 +82,10 @@
       <div class="date-container d-flex w-100 flex-column" data-aos="zoom-in-up" data-aos-duration="1000">
         <ul class="date-text-container">
           <li class="wedding-info-text text-pink list-item font-estonia">2021.12.31 Friday</li>
-          <li class="wedding-info-text text-pink list-item font-estonia">11:00<span> 莊園雞尾酒會</span></li>
-          <li class="wedding-info-text text-pink list-item font-estonia">12:00<span> 午宴準時開席</span></li>
+          <li class="wedding-info-text text-pink list-item">/</li>
+          <li class="wedding-info-text text-pink list-item">11:00<span> 莊園雞尾酒會</span></li>
+          <li class="wedding-info-text text-pink list-item">12:00<span> 午宴準時開席</span></li>
         </ul>
-        <!-- <div
-          class="date-text-container col-6 d-flex justify-content-center align-items-center"
-          data-aos="zoom-in-up"
-          data-aos-duration="1000"
-        >
-          <span class="wedding-info-text text-pink d-block font-estonia">2021.12.31 Friday</span>
-        </div>
-        <div
-          class="time-text-container col-6 d-flex justify-content-center align-items-center"
-          data-aos="zoom-in-up"
-          data-aos-duration="1000"
-        >
-          <ul class="date-list">
-            <li class="wedding-info-text text-pink list-item font-estonia">11:00<span> 莊園雞尾酒會</span></li>
-            <li class="wedding-info-text text-pink list-item font-estonia">12:00<span> 午宴準時開席</span></li>
-          </ul>
-        </div> -->
       </div>
 
       <div class="btn-container col-12" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -203,7 +203,7 @@
     </div>
   </section>
 
-  <div class="text-center" id="fixTop"><a href="#main" class="font-marker">TOP</a></div>
+  <div class="text-center fixTop-hidden" id="fixTop"><a href="#main" class="font-marker">TOP</a></div>
 </main>
 
     <!-- footer -->
@@ -234,6 +234,7 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./assets/js/all.js"></script>
     <script>
       AOS.init()

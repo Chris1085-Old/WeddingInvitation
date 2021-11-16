@@ -1,27 +1,14 @@
-.carousel-container {
-  // height: 400px;
-}
-
 .carousel {
   background: $secondary-color;
 }
 
-// .flickity-page-dots {
-//   bottom: 0px;
-//   padding-bottom: 10px;
-// }
-// /* white circles */
-// .flickity-page-dots .dot {
-//   width: 12px;
-//   height: 12px;
-//   opacity: 1;
-//   background: transparent;
-//   border: 2px solid white;
-// }
-// /* fill-in selected dot */
-// .flickity-page-dots .dot.is-selected {
-//   background: white;
-// }
+.flickity-button {
+  background: transparent;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
 
 /* position dots up a bit */
 .flickity-page-dots {

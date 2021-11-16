@@ -10,7 +10,7 @@ current: index
     <div class="main-content container content-container d-flex flex-column justify-content-center align-items-end">
       <div class="content-text text-white text-center">
         <div class="background-area"></div>
-        <span class="invited-text animate__animated animate__heartBeat animate__slow font-marker">You're Invited!</span>
+        <p class="invited-text animate__animated animate__heartBeat animate__slow font-marker">You're Invited!</p>
         <h1 class="married-text mt-3 animate__animated animate__fadeInUp font-pacifico">
           We Are<br />Getting Married.<br />
           2021.12.31 <i class="far fa-heart heart"></i>
@@ -31,9 +31,24 @@ current: index
     </a>
   </section>
 
+  <section class="carousel-container">
+    <div
+      class="carousel"
+      data-flickity='{ "imagesLoaded": true, "percentPosition": false,"autoPlay": true, "wrapAround": true }'
+    >
+      <img src="./assets/images/02.jpg" alt="orange tree" />
+      <img src="./assets/images/03.jpg" alt="orange tree" />
+      <img src="./assets/images/04.jpg" alt="orange tree" />
+      <img src="./assets/images/05.jpg" alt="orange tree" />
+      <img src="./assets/images/06.jpg" alt="orange tree" />
+      <img src="./assets/images/07.jpg" alt="orange tree" />
+      <img src="./assets/images/08.jpg" alt="orange tree" />
+      <img src="./assets/images/01.jpg" alt="orange tree" />
+    </div>
+  </section>
+
   <section class="wedding-info text-center" id="wedding-info">
     <div data-aos="fade-up" data-aos-duration="2000">
-      <!-- <h2 class="title font-marker text-white">Wedding Info</h2> -->
       <h2 class="title font-marker text-white"><i class="far fa-calendar-alt pr-2 icons"></i><br />DATE and TIME</h2>
     </div>
 
@@ -41,26 +56,10 @@ current: index
       <div class="date-container d-flex w-100 flex-column" data-aos="zoom-in-up" data-aos-duration="1000">
         <ul class="date-text-container">
           <li class="wedding-info-text text-pink list-item font-estonia">2021.12.31 Friday</li>
-          <li class="wedding-info-text text-pink list-item font-estonia">11:00<span> 莊園雞尾酒會</span></li>
-          <li class="wedding-info-text text-pink list-item font-estonia">12:00<span> 午宴準時開席</span></li>
+          <li class="wedding-info-text text-pink list-item">/</li>
+          <li class="wedding-info-text text-pink list-item">11:00<span> 莊園雞尾酒會</span></li>
+          <li class="wedding-info-text text-pink list-item">12:00<span> 午宴準時開席</span></li>
         </ul>
-        <!-- <div
-          class="date-text-container col-6 d-flex justify-content-center align-items-center"
-          data-aos="zoom-in-up"
-          data-aos-duration="1000"
-        >
-          <span class="wedding-info-text text-pink d-block font-estonia">2021.12.31 Friday</span>
-        </div>
-        <div
-          class="time-text-container col-6 d-flex justify-content-center align-items-center"
-          data-aos="zoom-in-up"
-          data-aos-duration="1000"
-        >
-          <ul class="date-list">
-            <li class="wedding-info-text text-pink list-item font-estonia">11:00<span> 莊園雞尾酒會</span></li>
-            <li class="wedding-info-text text-pink list-item font-estonia">12:00<span> 午宴準時開席</span></li>
-          </ul>
-        </div> -->
       </div>
 
       <div class="btn-container col-12" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -178,5 +177,5 @@ current: index
     </div>
   </section>
 
-  <div class="text-center" id="fixTop"><a href="#main" class="font-marker">TOP</a></div>
+  <div class="text-center fixTop-hidden" id="fixTop"><a href="#main" class="font-marker">TOP</a></div>
 </main>

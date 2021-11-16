@@ -189,7 +189,7 @@
 
   .date-text-container {
     .wedding-info-text {
-      font-size: 64px;
+      font-size: 40px;
       line-height: 80px;
 
       span {
@@ -198,18 +198,19 @@
       }
 
       @include pad {
-        font-size: 56px;
+        font-size: 32px;
         line-height: 60px;
 
         span {
           font-size: 32px;
+
           letter-spacing: 4px;
         }
       }
 
       @include mobile {
         line-height: 32px;
-        font-size: 36px;
+        font-size: 20px;
 
         span {
           font-size: 20px;
@@ -218,71 +219,35 @@
       }
 
       @media (max-width: 429px) {
-        font-size: 36px;
+        font-size: 20px;
         line-height: 44px;
         span {
           font-size: 20px;
           letter-spacing: 4px;
         }
       }
+
+      &:first-child {
+        font-size: 72px;
+        margin-bottom: 24px;
+
+        @include pad {
+          font-size: 64px;
+          margin-bottom: 24px;
+        }
+
+        @include mobile {
+          font-size: 40px;
+          margin-bottom: 24px;
+        }
+
+        @media (max-width: 429px) {
+          font-size: 44px;
+        }
+      }
     }
   }
 }
-
-//   .time-text-container {
-//     // border-left: 2px solid $pink;
-
-//     .wedding-info-text {
-//       font-size: 56px;
-//       margin-top: 20px;
-//       margin-bottom: 20px;
-
-//       span {
-//         font-size: 40px;
-//         letter-spacing: 6px;
-//       }
-
-//       @include pad {
-//         font-size: 40px;
-//         margin-top: 10px;
-//         margin-bottom: 10px;
-//         letter-spacing: 4px;
-
-//         span {
-//           font-size: 32px;
-//           letter-spacing: 4px;
-//         }
-//       }
-
-//       @include mobile {
-//         font-size: 28px;
-//         // margin-top: 2px;
-//         // margin-bottom: 2px;
-//         line-height: 32px;
-//         // letter-spacing: 4px;
-
-//         span {
-//           font-size: 20px;
-//           letter-spacing: 4px;
-//         }
-//       }
-
-//       @media (max-width: 429px) {
-//         font-size: 20px;
-//         margin-top: 2px;
-//         margin-bottom: 2px;
-//         line-height: 32px;
-//         // letter-spacing: 2px;
-
-//         span {
-//           font-size: 15px;
-
-//           letter-spacing: 2px;
-//         }
-//       }
-//     }
-//   }
-// }
 
 .btn-container {
   margin-bottom: 56px;
@@ -296,7 +261,7 @@
   }
 
   @include mobile {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 
     .btn-primary {
       font-size: 20px;
